@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="8" total="15" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="27889" started-at="2022-04-24T20:24:46 IST" finished-at="2022-04-24T20:25:14 IST">
+    <groups>
+      <group name="Smoke">
+        <method signature="A_ForgetPasswordTestCases.TestCaselinkfrgtpassword()[pri:1, instance:com.OrangeHRM.TestCases.A_ForgetPasswordTestCases@76a3e297]" name="TestCaselinkfrgtpassword" class="com.OrangeHRM.TestCases.A_ForgetPasswordTestCases"/>
+        <method signature="B_LogInpageTestCases.TestCaseValid()[pri:6, instance:com.OrangeHRM.TestCases.B_LogInpageTestCases@612fc6eb]" name="TestCaseValid" class="com.OrangeHRM.TestCases.B_LogInpageTestCases"/>
+        <method signature="C_DashbordTestCases.Logout()[pri:7, instance:com.OrangeHRM.TestCases.C_DashbordTestCases@1060b431]" name="Logout" class="com.OrangeHRM.TestCases.C_DashbordTestCases"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test name="Test" duration-ms="27889" started-at="2022-04-24T20:24:46 IST" finished-at="2022-04-24T20:25:14 IST">
+      <class name="com.OrangeHRM.TestCases.C_DashbordTestCases">
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.OrangeHRM.TestCases.C_DashbordTestCases@1060b431]" name="Login" is-config="true" duration-ms="1956" started-at="2022-04-24T20:25:09 IST" finished-at="2022-04-24T20:25:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="FAIL" signature="Logout()[pri:7, instance:com.OrangeHRM.TestCases.C_DashbordTestCases@1060b431]" name="Logout" duration-ms="3114" started-at="2022-04-24T20:25:11 IST" finished-at="2022-04-24T20:25:14 IST">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@id="welcome"]"}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-SFIF1J7', ip: '192.168.88.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Regal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57822}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 33533665d1901fc86cd0710ed302dba0
+*** Element info: {Using=xpath, value=//a[@id="welcome"]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@id="welcome"]"}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-SFIF1J7', ip: '192.168.88.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Regal\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57822}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 33533665d1901fc86cd0710ed302dba0
+*** Element info: {Using=xpath, value=//a[@id="welcome"]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy14.click(Unknown Source)
+at com.OrangeHRM.pages.C_Dashbord.clickonlogout(C_Dashbord.java:26)
+at com.OrangeHRM.TestCases.C_DashbordTestCases.Logout(C_DashbordTestCases.java:37)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method status="PASS" signature="Flush()[pri:0, instance:com.OrangeHRM.TestCases.C_DashbordTestCases@1060b431]" name="Flush" is-config="true" duration-ms="141" started-at="2022-04-24T20:25:14 IST" finished-at="2022-04-24T20:25:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Flush -->
+      </class> <!-- com.OrangeHRM.TestCases.C_DashbordTestCases -->
+      <class name="com.OrangeHRM.TestCases.B_LogInpageTestCases">
+        <test-method status="PASS" signature="TestCaseInvalid()[pri:5, instance:com.OrangeHRM.TestCases.B_LogInpageTestCases@612fc6eb]" name="TestCaseInvalid" duration-ms="2533" started-at="2022-04-24T20:25:01 IST" description="User should be not able to login with invalid creditionls " finished-at="2022-04-24T20:25:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCaseInvalid -->
+        <test-method status="PASS" signature="Flush()[pri:0, instance:com.OrangeHRM.TestCases.B_LogInpageTestCases@612fc6eb]" name="Flush" is-config="true" duration-ms="48" started-at="2022-04-24T20:25:04 IST" finished-at="2022-04-24T20:25:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Flush -->
+        <test-method status="PASS" signature="TestCaseValid()[pri:6, instance:com.OrangeHRM.TestCases.B_LogInpageTestCases@612fc6eb]" name="TestCaseValid" duration-ms="5228" started-at="2022-04-24T20:25:04 IST" description="User should be able to login with valid creditionls " finished-at="2022-04-24T20:25:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCaseValid -->
+        <test-method status="PASS" signature="Flush()[pri:0, instance:com.OrangeHRM.TestCases.B_LogInpageTestCases@612fc6eb]" name="Flush" is-config="true" duration-ms="64" started-at="2022-04-24T20:25:09 IST" finished-at="2022-04-24T20:25:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Flush -->
+      </class> <!-- com.OrangeHRM.TestCases.B_LogInpageTestCases -->
+      <class name="com.OrangeHRM.TestCases.A_ForgetPasswordTestCases">
+        <test-method status="PASS" signature="ReadFile()[pri:0, instance:com.OrangeHRM.TestCases.A_ForgetPasswordTestCases@76a3e297]" name="ReadFile" is-config="true" duration-ms="3125" started-at="2022-04-24T20:24:43 IST" finished-at="2022-04-24T20:24:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReadFile -->
+        <test-method status="PASS" signature="loadUrl()[pri:0, instance:com.OrangeHRM.TestCases.A_ForgetPasswordTestCases@76a3e297]" name="loadUrl" is-config="true" duration-ms="5058" started-at="2022-04-24T20:24:46 IST" finished-at="2022-04-24T20:24:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadUrl -->
+        <test-method status="PASS" signature="MultipleReport()[pri:0, instance:com.OrangeHRM.TestCases.A_ForgetPasswordTestCases@76a3e297]" name="MultipleReport" is-config="true" duration-ms="340" started-at="2022-04-24T20:24:51 IST" depends-on-methods="com.OrangeHRM.Utility.BaseClass.loadUrl" finished-at="2022-04-24T20:24:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MultipleReport -->
+        <test-method status="PASS" signature="TestCaselinkfrgtpassword()[pri:1, instance:com.OrangeHRM.TestCases.A_ForgetPasswordTestCases@76a3e297]" name="TestCaselinkfrgtpassword" duration-ms="1841" started-at="2022-04-24T20:24:52 IST" finished-at="2022-04-24T20:24:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCaselinkfrgtpassword -->
+        <test-method status="PASS" signature="flush()[pri:0, instance:com.OrangeHRM.TestCases.A_ForgetPasswordTestCases@76a3e297]" name="flush" is-config="true" duration-ms="512" started-at="2022-04-24T20:24:54 IST" finished-at="2022-04-24T20:24:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method status="PASS" signature="TestCaseRestvalid()[pri:2, instance:com.OrangeHRM.TestCases.A_ForgetPasswordTestCases@76a3e297]" name="TestCaseRestvalid" duration-ms="1366" started-at="2022-04-24T20:24:54 IST" description="user unable to reste pasword with Invalid username" finished-at="2022-04-24T20:24:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCaseRestvalid -->
+        <test-method status="PASS" signature="flush()[pri:0, instance:com.OrangeHRM.TestCases.A_ForgetPasswordTestCases@76a3e297]" name="flush" is-config="true" duration-ms="85" started-at="2022-04-24T20:24:56 IST" finished-at="2022-04-24T20:24:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method status="PASS" signature="TestCaseRestInvalid()[pri:3, instance:com.OrangeHRM.TestCases.A_ForgetPasswordTestCases@76a3e297]" name="TestCaseRestInvalid" duration-ms="1055" started-at="2022-04-24T20:24:56 IST" description="user able to reste pasword with valid username" finished-at="2022-04-24T20:24:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCaseRestInvalid -->
+        <test-method status="PASS" signature="flush()[pri:0, instance:com.OrangeHRM.TestCases.A_ForgetPasswordTestCases@76a3e297]" name="flush" is-config="true" duration-ms="39" started-at="2022-04-24T20:24:57 IST" finished-at="2022-04-24T20:24:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method status="PASS" signature="TestCaseRestcancel()[pri:4, instance:com.OrangeHRM.TestCases.A_ForgetPasswordTestCases@76a3e297]" name="TestCaseRestcancel" duration-ms="4340" started-at="2022-04-24T20:24:57 IST" description="user able to click on cancel button" finished-at="2022-04-24T20:25:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCaseRestcancel -->
+        <test-method status="PASS" signature="flush()[pri:0, instance:com.OrangeHRM.TestCases.A_ForgetPasswordTestCases@76a3e297]" name="flush" is-config="true" duration-ms="65" started-at="2022-04-24T20:25:01 IST" finished-at="2022-04-24T20:25:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+      </class> <!-- com.OrangeHRM.TestCases.A_ForgetPasswordTestCases -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
